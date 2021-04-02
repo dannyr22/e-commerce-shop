@@ -4,6 +4,7 @@ import Navbar from './components/Navbar/Navbar'
 import Products from './components/Products/Products'
 import Cart from './components/Cart/Cart';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Checkout from './components/CheckoutForm/Checkout/Checkout';
 
 const App = () => {
   const [products, setProducts] = useState([])
@@ -24,7 +25,7 @@ const App = () => {
   }
 
   const handleUpdateCartQuantity = async (productId, quantity) => {
-  const cart = await commerce.cart.update(productId, { quantity })
+  const {cart} = await commerce.cart.update(productId, { quantity })
     setCart(cart)
   }
 
@@ -63,6 +64,9 @@ const App = () => {
               handleRemoveFromCart={handleRemoveFromCart}
               handleEmptyCart={handleEmptyCart}
               />
+          </Route>
+          <Route exact path="/checkout">
+            <Checkout />
           </Route>
         </Switch>
       </div>
