@@ -18,7 +18,37 @@ const AddressForm = () => {
             <FormInput required name="address1" label="Address"/>
             <FormInput required name="email" label="Email"/>
             <FormInput required name="city" label="City"/>
-            <FormInput required name="zip" label="Zip / Postal code"/>
+            <FormInput required name="zip" label="Zip / Postal code" />
+            <Grid item xs={12} sm={6}>
+              <InputLabel>Shipping Country</InputLabel>
+              <Select value={ } dullWidth onChange={ }>
+                <MenuItem
+                  key={ }
+                  value={}>
+                  Select Me
+                </MenuItem>
+              </Select>
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <InputLabel>Shipping Sub-division</InputLabel>
+              <Select value={ } dullWidth onChange={ }>
+                <MenuItem
+                  key={ }
+                  value={}>
+                  Select Me
+                </MenuItem>
+              </Select>
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <InputLabel>Shipping options</InputLabel>
+              <Select value={ } dullWidth onChange={ }>
+                <MenuItem
+                  key={ }
+                  value={}>
+                  Select Me
+                </MenuItem>
+              </Select>
+            </Grid>
           </Grid>
         </form>
       </FormProvider>
