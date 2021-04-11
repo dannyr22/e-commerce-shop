@@ -11,7 +11,7 @@ const AddressForm = () => {
   const [shippingSubdivision, setShippingSubdivision] = useState('')
   const [shippingOptions, setShippingOptions] = useState([])
   const [shippingOption, setShippingOption] = useState('')
-  
+
   const methods = useForm();
 
   return (
@@ -28,9 +28,9 @@ const AddressForm = () => {
             <FormInput required name="zip" label="Zip / Postal code" />
             <Grid item xs={12} sm={6}>
               <InputLabel>Shipping Country</InputLabel>
-              <Select value={ } dullWidth onChange={ }>
+              <Select value={} dullWidth onChange={}>
                 <MenuItem
-                  key={ }
+                  key={}
                   value={}>
                   Select Me
                 </MenuItem>
@@ -38,9 +38,9 @@ const AddressForm = () => {
             </Grid>
             <Grid item xs={12} sm={6}>
               <InputLabel>Shipping Sub-division</InputLabel>
-              <Select value={ } dullWidth onChange={ }>
+              <Select value={} dullWidth onChange={}>
                 <MenuItem
-                  key={ }
+                  key={}
                   value={}>
                   Select Me
                 </MenuItem>
@@ -48,9 +48,9 @@ const AddressForm = () => {
             </Grid>
             <Grid item xs={12} sm={6}>
               <InputLabel>Shipping options</InputLabel>
-              <Select value={ } dullWidth onChange={ }>
+              <Select value={} dullWidth onChange={}>
                 <MenuItem
-                  key={ }
+                  key={}
                   value={}>
                   Select Me
                 </MenuItem>
